@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.footer {
+    background: #2098d1;
+}
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1.5rem 0 1.5rem 3rem;
+    color: white;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+@media (max-width: 599px) {
+    .container {
+        padding: 1.5rem 2rem;
+    }
+}

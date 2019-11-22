@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+.portfolio {
+    background: #333536;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 7%;
+    justify-content: center;
+    min-height: 300px;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3rem;
+    color: white;
+    font-weight: 300;
+    a:hover {
+        color: #aaaaaa
+    }
+
+    img {
+        filter: grayscale(100%);
+    }
+
+    img:hover {
+        filter: grayscale(0%);
+        transition: filter .5s ease-in-out;
+    }
+}
+.card {
+    display: grid;
+    justify-self: center;
+    width: 350px;
+    font-size: .85rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        img {
+            filter: grayscale(0%);
+        }
+    }
+}

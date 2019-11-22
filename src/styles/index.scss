@@ -1,0 +1,37 @@
+@import './variables.scss';
+* {
+  margin: 0;
+  padding: 0;
+  a {
+    color: white;
+    text-decoration: none;    
+  }
+  a:hover {
+    color: #333536;
+    transition: color .15s ease-in;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 62.5%;
+  
+  div {
+    margin: 0;
+  }
+}
+
+.active{
+   color:white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

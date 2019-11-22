@@ -1,0 +1,19 @@
+.container {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    filter: brightness(1) invert(0);
+}
+
+img:hover {
+    filter: brightness(1) invert(.4);
+    transition: filter .25s ease-in-out;
+}
+    
+
+

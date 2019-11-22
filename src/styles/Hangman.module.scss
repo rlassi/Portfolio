@@ -1,0 +1,105 @@
+.container {
+
+    background: #2B292E;
+    color: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 350px;
+
+    span {
+        border-bottom: 1px solid #534f59;
+        display: inline-block;
+        font-size: 2rem;
+        height: 2.4rem;
+        line-height: 2.4rem;
+        margin: 0 .1rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: 1.5rem;
+    }
+
+    p {
+        font-weight: 300;
+        margin-bottom: .8rem;
+    }
+
+    .puzzle {
+        display: flex;
+        margin: 3rem 0;
+    }
+
+    .button {
+        background: #7044a0;
+        border: none;
+        border-bottom: 2px solid #603a88;
+        cursor: pointer;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: .8rem;
+        transition: background .3s ease, color .3s ease;
+    }
+
+    .button:hover {
+        background: #5F3A87;
+    }
+
+    .rotatePleaseContainer {
+        visibility: hidden;
+        position: relative;
+    }
+    .rotatePlease {
+        position: fixed;
+        bottom: 10px;
+        right: 100px;
+        left: 100px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 599px) {
+    .container {
+        font-size: 1rem;
+        overflow: hidden;
+
+        .button {
+            font-size: 1rem;
+        }
+        span {
+            border-bottom: 1px solid #534f59;
+            display: inline-block;
+            font-size: 1.5rem;
+            height: 2.4rem;
+            line-height: 2.4rem;
+            margin: 0 .1rem;
+            text-align: center;
+            text-transform: uppercase;
+            width: 1.5rem;
+        }
+
+        .rotatePleaseContainer {
+            visibility: visible;
+        }
+    }
+}
+
+/* h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+h4 {
+    font-size: 14px;
+    color: gray;
+    margin-top: 0px;
+}
+#status {
+    line-height: 35px;
+    color: green;
+} */

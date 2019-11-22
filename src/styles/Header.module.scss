@@ -1,0 +1,74 @@
+@import './variables.scss';
+
+.header {
+    background: #2098d1;
+}
+
+.headerContainer {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    height: 95vh;
+    min-height: 300px;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: $desktop-padding;
+    color: white;
+    font-weight: 300;
+}
+
+.headerContainerNavBar {
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    grid-row: 1 / 2;
+    justify-self: end;
+    justify-items: start;
+    font-size: $medium-font;
+    padding: 0 1rem;
+}
+
+.headerContainerPitch {
+    grid-row: 2 / 12;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    h1 {
+        font-size: $large-font;
+        font-weight: 300;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+}
+
+.headerContainerPortfolioLink {
+    grid-row: 12 / 13;
+    justify-self: center;
+    align-self: end;
+    font-size: $medium-font;
+}
+
+@media (max-width: 599px) {
+    .headerContainer {
+        padding: $mobile-padding;
+    }
+    .headerContainerNavBar {
+        padding: 0;
+    }
+    .headerContainerPitch {
+        grid-row: 2 / 12;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 50px;
+        }
+        h2 {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+}

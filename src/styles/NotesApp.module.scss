@@ -1,0 +1,174 @@
+.container {
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+
+    button {
+        cursor: pointer;
+    }
+
+    a {
+        color: #396684;
+    }
+
+    /* Container */
+
+    .contentContainer {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    }
+
+    /* Header */
+
+    .header {
+    background: #43799c;
+    color: white;
+    padding: 1.6rem 0;
+    }
+
+    .headerTitle {
+    font-size: 2.5rem;
+    margin-bottom: .4rem;
+    }
+
+    .headerSubtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    }
+
+    /* Actions Bar */
+
+    .actions {
+        background-color: #F7F7F7;
+        border-bottom: 1px solid #dedfe0;
+        padding: .8rem 0;
+    }
+
+    .actionsContainer {
+        align-items: center;
+        display: flex;
+        max-width: 60rem;
+        margin: 0 auto;
+        min-height: 3rem;
+        padding: 0 1.6rem;
+    }
+
+    .actionsContainerSpaced {
+        justify-content: flex-end;
+    }
+
+    /* Form Inputs */
+
+    .input {
+        border: 1px solid #DEDFE0;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 300;
+        height: 3rem;
+        margin-right: .8rem;
+        padding: .4rem .8rem;
+    }
+
+    .dropdown {
+        border-radius: 0;
+        border: 1px solid #DEDFE0;
+        background: white;
+        font-size: 1rem;
+        font-weight: 300;
+        height: 3rem;
+        margin-right: .8rem;
+    }
+
+    .button {
+        background: #43799c;
+        border: none;
+        border-bottom: 2px solid #396684;
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0 15px 0 0;
+        padding: .8rem;
+        transition: background .3s ease;
+    }
+
+    .button:hover {
+        background: #396684;
+    }
+
+    .buttonSecondary {
+        background: #888888;
+        border-bottom: 2px solid #717171;
+    }
+
+    .buttonSecondary:hover {
+        background: #6E6E6E;
+    }
+
+    /* Note editor */
+
+    .titleInput {
+        border: 1px solid #DEDFE0;
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: block;
+        margin: 2.4rem 0;
+        padding: .8rem;
+        width: 100%;
+    }
+
+    .bodyInput {
+        border: 1px solid #DEDFE0;
+        font-family: inherit;
+        font-size: 1.2rem;
+        font-weight: 300;
+        display: block;
+        margin: 2.4rem 0;
+        min-height: 15rem;
+        padding: .8rem;
+        width: 100%;
+    }
+
+    /* Note List Item */
+
+    .listItem {
+        text-decoration: none;
+        color: #333333;
+        background: #F7F7F7;
+        border: 1px solid #dedfe0;
+        margin: 1.6rem 0;
+        padding: 1.6rem;
+        display: block;
+        transition: background .3s ease;
+    }
+
+    .listItem:hover {
+        background: #eeeeee;
+    }
+
+    .listItemTitle {
+        font-size: 1.3rem;
+        margin-bottom: .4rem
+    }
+
+    .listItemSubtitle {
+        color: #666;
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .emptyMessage {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 3.2rem 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .actionsContainer {
+
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,23 @@
+.backContainer {
+    position: relative;
+    font-size: 1rem;
+}
+
+#backFloat {
+    text-align: right;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    line-height: 20px;
+    color: white;
+    font-weight: 300;
+    font-size: .9rem;
+    a {
+        color: white;
+        text-decoration: none;    
+    }
+    a:hover {
+        color: #333536;
+        transition: color .15s ease-in;
+    }
+}

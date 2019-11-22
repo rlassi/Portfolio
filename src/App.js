@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ScrollToTop from 'react-scroll-up';
 
-function App() {
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+import up from './images/up.png';
+
+import appStyles from './styles/App.module.scss';
+
+const App = () => { 
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className={appStyles.container}>        
+        <ScrollToTop 
+          duration={600} 
+          showUnder={700}
+          style={{right: 30, bottom: 30}}
         >
-          Learn React
-        </a>
-      </header>
+            <img alt="scroll to top" src={up} />
+        </ScrollToTop>       
+        <Header />
+        <Portfolio />
+        <About />
+        <Contact />
+        <Footer />
     </div>
   );
 }
