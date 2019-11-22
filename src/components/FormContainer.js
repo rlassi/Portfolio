@@ -51,7 +51,7 @@ const FormContainer = () => {
                 placeholder={'Please enter your e-mail'}
                 handleChange={handleInput}
                 className={formStyles.name}
-            /> {/* Name field */}
+            /> {/* E-mail field */}
             <Input 
                 type={'text'}
                 title={'Subject*'}
@@ -72,7 +72,7 @@ const FormContainer = () => {
             <Button 
                 title={'Submit'}
                 action={handleFormSubmit}
-                type={'primary'}
+                type={'Submit'}
                 className={formStyles.button}
             /> {/* Submit form */}
         </form>
