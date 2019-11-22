@@ -31,7 +31,7 @@ const FormContainer = () => {
 
     
     return (
-        <form name={'Contact'} className={formStyles.input} onSubmit={handleFormSubmit}>
+        <form name={'Contact'} className={formStyles.input} onSubmit={handleFormSubmit} netlify>
             <Input 
                 type={'text'}
                 title={'Name*'}
