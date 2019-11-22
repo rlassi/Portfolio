@@ -15,11 +15,6 @@ const FormContainer = () => {
         message: ''
     });
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-
-    };
-
     const handleInput = (e) => {
         let name = e.target.name;
         let value = e.target.value;
