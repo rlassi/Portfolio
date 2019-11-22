@@ -32,7 +32,7 @@ const FormContainer = () => {
 
     
     return (
-        <form className={formStyles.input} onSubmit={handleFormSubmit}>
+        <form name="contact" method="post" className={formStyles.input} onSubmit={handleFormSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <Input 
                 type={'text'}
