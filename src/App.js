@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import ScrollToTop from 'react-scroll-up';
 
 import Header from './components/Header';
@@ -12,9 +13,12 @@ import up from './images/up.png';
 import appStyles from './styles/App.module.scss';
 
 const App = () => { 
-  
+    
   return (
-    <div className={appStyles.container}>        
+    <div className={appStyles.container}>
+      <Helmet>
+        <title>rkLassiter Portfolio</title>
+      </Helmet>
         <ScrollToTop 
           duration={600} 
           showUnder={700}

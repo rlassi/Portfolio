@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import { Helmet } from 'react-helmet';
 import BackToFolio from './BackToFolio';
 
 import { saveTodos, createTodo, getTodos } from '../apps/Todos/todos'
@@ -42,6 +42,9 @@ const TodoApp = () => {
 
     return (
         <div className={todoStyles.container}>
+            <Helmet>
+                <title>rkL | Todos</title>
+            </Helmet>
             <div className={todoStyles.header}>
                 <div className={todoStyles.contentContainer}>
                     <h1 className={todoStyles.headerTitle}>To-Do App</h1>

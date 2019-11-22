@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import { Helmet } from 'react-helmet';
 import BackToFolio from './BackToFolio';
 
 import Hangman from '../apps/Hangman/hangman';
@@ -49,6 +49,9 @@ const HangmanApp = () => {
 
     return(
         <div className={hangmanStyles.container}>
+            <Helmet>
+                <title>rkL | Hangman</title>
+            </Helmet>
             <div id="puzzle" className={hangmanStyles.puzzle}></div>
             <p id="remaining-guesses"></p>
             <button id="reset" className={hangmanStyles.button}>Reset</button>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import { Helmet } from 'react-helmet';
 import BackToFolio from './BackToFolio';
 
 import { createNote, getNotes } from '../apps/Notes/notes';
@@ -41,6 +41,9 @@ const NotesApp = (props) => {
     })
     return (
         <div className={notesStyles.container}>
+            <Helmet>
+                <title>rkL | Notes</title>
+            </Helmet>
             <header className={notesStyles.header}>
                 <div className={notesStyles.contentContainer}>
                     <h1 className={notesStyles.headerTitle}>Notes App</h1>
