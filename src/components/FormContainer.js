@@ -15,6 +15,11 @@ const FormContainer = () => {
         message: ''
     });
 
+    const handleFormSubmit = (e) => {
+        
+
+    };
+
     const handleInput = (e) => {
         let name = e.target.name;
         let value = e.target.value;
