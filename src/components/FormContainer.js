@@ -10,6 +10,7 @@ const FormContainer = () => {
 
     const [newMessage, setNewMessage] = useState({
         name: '',
+        email: '',
         subject: '',
         message: ''
     });
@@ -31,13 +32,23 @@ const FormContainer = () => {
 
     
     return (
-        <form name={'Contact'} className={formStyles.input} onSubmit={handleFormSubmit} netlify>
+        <form className={formStyles.input} onSubmit={handleFormSubmit}>
+            <input type="hidden" name="form-name" value="contact" />
             <Input 
                 type={'text'}
                 title={'Name*'}
                 name={'name'}
                 value={newMessage.name}
                 placeholder={'Please enter your name'}
+                handleChange={handleInput}
+                className={formStyles.name}
+            /> {/* Name field */}
+            <Input
+                type={'email'}
+                title={'E-mail*'}
+                name={'email'}
+                value={newMessage.email}
+                placeholder={'Please enter your e-mail'}
                 handleChange={handleInput}
                 className={formStyles.name}
             /> {/* Name field */}
