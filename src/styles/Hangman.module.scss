@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: scroll;
     min-height: 350px;
 
     span {
@@ -16,7 +17,7 @@
         display: inline-block;
         font-size: 2rem;
         height: 2.4rem;
-        line-height: 2.4rem;
+        line-height: 2rem;
         margin: 0 .1rem;
         text-align: center;
         text-transform: uppercase;
@@ -59,6 +60,26 @@
         right: 100px;
         left: 100px;
         text-align: center;
+    }
+    .typeYourGuess {
+        font-weight: 300;
+        p {
+            margin-right: 1rem;
+            display: inline;
+        }
+    }
+    .guessInput {
+        background: #2B292E;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 300;
+        border: #2B292E;
+        border-bottom: 1px solid #534f59;
+        width: 2.5rem;
+        height: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        overflow: visible;
     }
 
 }

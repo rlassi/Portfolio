@@ -15,12 +15,16 @@ const HangmanApp = () => {
         let puzzleEl = document.getElementById('puzzle')
         let remainingGuessesMessageEl = document.getElementById('remaining-guesses')
         // statusEl = document.getElementById('status')
+        let guessInputEl = document.getElementById('make-guess')
         let gameOne
 
-        window.addEventListener('keypress', (e) => {
-            const guess = String.fromCharCode(e.charCode)
+        guessInputEl.addEventListener('submit', (e) => {
+            const guess = e.target.elements.guessInput.value.trim()
+            e.preventDefault()
             gameOne.makeGuess(guess)
             render()
+            e.target.elements.guessInput.value = ''
+            
         })
 
         const render = () => {
@@ -53,6 +57,13 @@ const HangmanApp = () => {
                 <title>rkL | Hangman</title>
             </Helmet>
             <div id="puzzle" className={hangmanStyles.puzzle}></div>
+            <form id="make-guess">
+                <label className={hangmanStyles.typeYourGuess}>
+                    <p>Type your guess:</p>
+                    <input type="text" name="guessInput" className={hangmanStyles.guessInput} />
+                </label>
+                <input type="submit" hidden />
+            </form>
             <p id="remaining-guesses"></p>
             <button id="reset" className={hangmanStyles.button}>Reset</button>
             <BackToFolio readmeLink="https://github.com/rlassi/Hangman/blob/master/README.md" />

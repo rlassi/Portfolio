@@ -10,7 +10,14 @@ import portfolioStyles from '../styles/Portfolio.module.scss';
 const Portfolio = () => {
     return (
         <div className={portfolioStyles.portfolio} id="portfolio">
-            <div className={portfolioStyles.container}> 
+            <div className={portfolioStyles.container}>
+                {/*<div className={portfolioStyles.card}>
+                    <Link to="/Indecision-App">
+                        <img alt="Indecision App" src={hangmangThumbnail} />
+                        <br />
+                        Indecision
+                    </Link>
+                </div>*/}
                 <div className={portfolioStyles.card}>
                     <Link to="/Notes-App/app">
                         <img alt="Notes App" src={notesThumbnail} />

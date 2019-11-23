@@ -10,6 +10,7 @@ import NotesApp from './components/NotesApp';
 import NotesAppEdit from './components/NotesAppEdit';
 import TodoApp from './components/TodoApp';
 import NotFound from './components/NotFound';
+import IndecisionApp from './components/IndecisionApp';
 
 import '../src/styles/index.scss';
 
@@ -26,6 +27,7 @@ const routing = (
                 <Route path="/notes-app/app" component={NotesApp} />
                 <Route path="/notes-app/edit" component={NotesAppEdit} />
                 <Route path="/todo-app" component={TodoApp} />
+                <Route path="/indecision-app" component={IndecisionApp} />
                 <Route component={NotFound} />
             </Switch>
         </div>

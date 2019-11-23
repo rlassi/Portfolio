@@ -1,13 +1,9 @@
-.backContainer {
-    position: relative;
-    font-size: 1rem;
-}
-
 #backFloat {
-    text-align: right;
-    position: fixed;
+    font-size: 1rem;
+    position: absolute;
     top: 15px;
     right: 15px;
+    text-align: right;
     line-height: 20px;
     color: white;
     font-weight: 300;
