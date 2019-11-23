@@ -18,19 +18,19 @@ const App = () => {
     <div className={appStyles.container}>
       <Helmet>
         <title>rkLassiter Portfolio</title>
-      </Helmet>
-        <ScrollToTop 
-          duration={600} 
-          showUnder={700}
-          style={{right: 30, bottom: 30}}
-        >
-            <img alt="scroll to top" src={up} />
-        </ScrollToTop>       
+      </Helmet>     
         <Header />
         <Portfolio />
         <About />
         <Contact />
         <Footer />
+      <ScrollToTop
+        duration={600}
+        showUnder={700}
+        style={{ right: 30, bottom: 30 }}
+      >
+        <img alt="scroll to top" src={up} />
+      </ScrollToTop>  
     </div>
   );
 }
