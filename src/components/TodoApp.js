@@ -45,7 +45,6 @@ const TodoApp = () => {
             <Helmet>
                 <title>rkL | Todos</title>
             </Helmet>
-            <BackToFolio readmeLink="https://github.com/rlassi/Todo-App/blob/master/README.md" />
             <div className={todoStyles.header}>
                 <div className={todoStyles.contentContainer}>
                     <h1 className={todoStyles.headerTitle}>To-Do App</h1>
@@ -67,6 +66,7 @@ const TodoApp = () => {
                     <button className={todoStyles.button}>Add Todo</button>
                 </form>
             </div>
+            <BackToFolio readmeLink="https://github.com/rlassi/Todo-App/blob/master/README.md" />
         </div>       
     );
 };
