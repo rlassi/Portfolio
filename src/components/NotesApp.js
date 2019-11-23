@@ -14,7 +14,7 @@ const NotesApp = (props) => {
 
         document.querySelector('#create-note').addEventListener('click', (e) => {
             const idCreator = createNote()
-            props.history.push(`./edit/#${idCreator}`)
+            props.history.push(`./edit#${idCreator}`)
             //location.assign(`/edit.html#${idCreator}`)
         })
 

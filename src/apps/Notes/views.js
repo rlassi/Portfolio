@@ -14,7 +14,7 @@ const generateNoteDOM = (note) => {
     noteEl.appendChild(textEl)
 
     // Setup the link
-    noteEl.setAttribute('href', `./edit/#${note.id}`)
+    noteEl.setAttribute('href', `./edit#${note.id}`)
     noteEl.classList.add(notesStyles.listItem)
     noteEl.appendChild(generateTimestamp(note))
 
@@ -26,7 +26,7 @@ const generateNoteDOM = (note) => {
 const generateTimestamp = (note) => {
     const statusEl = document.createElement('a')
     statusEl.textContent = `last updated: ${moment(note.updatedAt).fromNow()} // created: ${moment(note.createdAt).format('MMM D, YYYY')}`
-    statusEl.setAttribute('href', `./edit/#${note.id}`)
+    statusEl.setAttribute('href', `./edit#${note.id}`)
     statusEl.classList.add(notesStyles.listItemSubtitle)
     return statusEl
 }
