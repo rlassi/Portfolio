@@ -3,7 +3,7 @@
     font-style: italic;
     margin: $m-size 0 0 0;
     padding: 0 $m-size;
-
+    font-size: 1rem;
 }
 
 .add-option {
@@ -20,6 +20,7 @@
     border: none;
     border-bottom: .3rem solid darken($dark-blue, 10%);
     margin: 0 0 $s-size 0;
+    font-size: 1rem;
 }
 
 @media (min-width: $desktop-breakpoint) {

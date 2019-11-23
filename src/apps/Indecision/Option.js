@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../Indecision/styles/styles.scss'
+
 const Option = (props) => (
     <div className="option">
         <p className="option__text">{props.count}. {props.optionText}</p>

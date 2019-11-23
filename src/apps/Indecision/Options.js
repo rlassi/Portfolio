@@ -1,6 +1,8 @@
 import React from 'react';
 import Option from './Option';
 
+import '../Indecision/styles/styles.scss'
+
 const Options = (props) => (
         <div>
             <div className="widget-header">

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../Indecision/styles/styles.scss'
+
 const Action = (props) => (
         <div>
             <button

@@ -4,6 +4,7 @@ import Header from '../apps/Indecision/Header';
 import Action from '../apps/Indecision/Action';
 import Options from '../apps/Indecision/Options';
 import OptionModal from '../apps/Indecision/OptionModal';
+import BackToFolio from './BackToFolio';
 
 import '../apps/Indecision/styles/styles.scss'
 
@@ -62,7 +63,7 @@ class IndecisionApp extends React.Component {
     render() {
         const subtitle = 'Put your life in the hands of a computer!'
         return (
-            <div>
+            <div className="appContainer">
                 <Header subtitle={subtitle} />
                 <div className="container">
                     <Action
@@ -82,6 +83,7 @@ class IndecisionApp extends React.Component {
                     selectedOption={this.state.selectedOption} 
                     handleClearSelectedOption={this.handleClearSelectedOption}
                 />
+                <BackToFolio readmeLink="https://github.com/rlassi/Indecision-App/blob/master/README.md" />
             </div>
         );
     }

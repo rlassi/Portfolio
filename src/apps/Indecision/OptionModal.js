@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+import '../Indecision/styles/styles.scss'
+
 const OptionModal = (props) => (
     <Modal
         isOpen={!!props.selectedOption}

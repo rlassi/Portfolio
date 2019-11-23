@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../Indecision/styles/styles.scss'
+
 const Header = (props) => (
         <div className="header">
             <div className="container">

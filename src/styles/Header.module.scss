@@ -14,6 +14,12 @@
     padding: $desktop-padding;
     color: white;
     font-weight: 300;
+
+    ul {
+        margin-top: 3rem;
+        line-height: 25px;
+        list-style-type: none;
+    }
 }
 
 .headerContainerNavBar {

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../Indecision/styles/styles.scss'
+
 export default class AddOption extends React.Component {
     state = {
         error: undefined

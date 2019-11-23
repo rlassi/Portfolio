@@ -1,5 +1,12 @@
+.appContainer {
+    background: $dark-blue;
+    position: relative;
+    height: 100vh;
+    overflow: scroll;
+}
+
 .container {
-    max-width: 60rem;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 0 $m-size;
 }
