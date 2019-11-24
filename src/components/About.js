@@ -14,7 +14,7 @@ const About = () => {
                     With a background in music and a degree in recording engineering, 
                     classical training in percussion, and a lifelong passion for coding and 
                     all things computers, I’ve accumulated a wealth of broadly transferable 
-                    skills in life. Disparate coordinates, as these seem to be, turn out to 
+                    skills in life. Disparate coordinates, as these seem to be, in fact
                     yield closely knit assets in both life and career. With the experience 
                     accumulated over the last decade as a freelance recording engineer/producer 
                     and musician, I have thrived where being agile, team-oriented, and creative 

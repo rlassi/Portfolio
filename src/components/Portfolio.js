@@ -11,6 +11,7 @@ import portfolioStyles from '../styles/Portfolio.module.scss';
 const Portfolio = () => {
     return (
         <div className={portfolioStyles.portfolio} id="portfolio">
+            <h1>Portfolio</h1>
             <div className={portfolioStyles.container}>
                 <div className={portfolioStyles.card}>
                     <Link to="/Indecision-App">
