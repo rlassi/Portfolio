@@ -4,7 +4,9 @@
     background: #333536;
     h1 {
         font-weight: 300;
-        padding: 3rem 3rem 0rem;
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: 2rem 0 0 2rem;
     }
 }
 .container {
@@ -45,7 +47,13 @@
 }
 
 @media (max-width: 599px) {
+    .portfolio {
+        h1 {
+            padding: 2rem .5rem 0;
+        }
+    }
     .container {
+        padding: 1.5rem;
         img {
             filter: grayscale(0%);
         }
