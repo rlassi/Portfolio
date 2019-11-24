@@ -1,5 +1,7 @@
 import React from 'react';
 
+import me from '../images/me.jpg';
+
 import aboutStyles from '../styles/About.module.scss';
 
 const About = () => {
@@ -8,7 +10,8 @@ const About = () => {
             <div className={aboutStyles.container}>
                 <h1>About Me</h1>
                 <div className={aboutStyles.contentCard}>
-                    Coming from a background in music with a degree in recording engineering, 
+                    <img alt="Profile Picture" src={me} id={aboutStyles.me} />
+                    With a background in music and a degree in recording engineering, 
                     classical training in percussion, and a lifelong passion for coding and 
                     all things computers, I’ve accumulated a wealth of broadly transferable 
                     skills in life. Disparate coordinates, as these seem to be, turn out to 

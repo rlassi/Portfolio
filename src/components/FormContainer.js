@@ -36,7 +36,7 @@ const FormContainer = () => {
             <input type="hidden" name="form-name" value="contact" />
             <Input 
                 type={'text'}
-                title={'Name*'}
+                title={'Name'}
                 name={'name'}
                 value={newMessage.name}
                 placeholder={'Please enter your name'}
@@ -45,7 +45,7 @@ const FormContainer = () => {
             /> {/* Name field */}
             <Input
                 type={'email'}
-                title={'E-mail*'}
+                title={'E-mail'}
                 name={'email'}
                 value={newMessage.email}
                 placeholder={'Please enter your e-mail'}
@@ -54,7 +54,7 @@ const FormContainer = () => {
             /> {/* E-mail field */}
             <Input 
                 type={'text'}
-                title={'Subject*'}
+                title={'Subject'}
                 name={'subject'}
                 value={newMessage.subject}
                 placeholder={'Please enter a subject'}
@@ -62,7 +62,7 @@ const FormContainer = () => {
                 className={formStyles.subject}
             /> {/* Subject field */}
             <TextArea 
-                title={'Message*'}
+                title={'Message'}
                 name={'message'}
                 value={newMessage.message}
                 placeholder={'Please enter a message'}

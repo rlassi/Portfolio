@@ -1,10 +1,13 @@
 import React from 'react';
 
+import formStyles from '../styles/FormContainer.module.scss';
+
 const Input = (props) => {
     return (
         <div>
             <label 
                 htmlFor={props.name}
+                className={formStyles.label}
             >
                 {props.title}
             </label>
