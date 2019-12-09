@@ -63,6 +63,7 @@
 @media (max-width: 599px) {
     .headerContainer {
         padding: $mobile-padding;
+        height: 95vh;
     }
     .headerContainerNavBar {
         margin: 0 -15px;
@@ -83,6 +84,5 @@
             font-weight: 300;
             line-height: 27px;
         }
-        
     }
 }

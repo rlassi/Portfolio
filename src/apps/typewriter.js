@@ -1,4 +1,6 @@
-export const typewriterApp = () => {
+import { useEffect } from 'react';
+
+export const useTypewriterApp = () => {
     const txt = [
         'a web developer.',
         'a lifelong learner.',
@@ -35,17 +37,20 @@ export const typewriterApp = () => {
     let cursor = true;
     const cursorSpeed = 500;
 
-    setInterval(() => {
-        if (cursor) {
-            document.getElementById('cursor').style.opacity = 0;
-            cursor = false;
-        } else {
-            document.getElementById('cursor').style.opacity = 1;
-            cursor = true;
-        }
-    }, cursorSpeed);
+    let typewriterOne = null
+    let typewriterTwo = null
+    let typewriterThree = null
 
     const typewriter = (i, x, word, txtArray, lastWord) => {
+
+        const typewriterCallback = () => {
+            typewriter(i, x, word, txtArray, lastWord)
+        }
+
+        const typewriterDeleteCallback = () => {
+            deleteLetter()
+            typewriter(i, x, word, txtArray, lastWord)
+        }
 
         const deleteLetter = () => {
             const newTxtArray = txtArray;
@@ -57,42 +62,72 @@ export const typewriterApp = () => {
         if (i < txtArray.length) {
             document.getElementById('typewriter').innerHTML += txtArray[i];
             i++;
-            setTimeout(() => {
-                typewriter(i, x, word, txtArray, lastWord)
-            }, speed);
+            typewriterOne = setTimeout(typewriterCallback, speed);
         } else if (x === word.length && !lastWord) {
-            setTimeout(() => {
-                deleteLetter()
-                typewriter(i, x, word, txtArray, lastWord)
-            }, 1100);
+            typewriterTwo = setTimeout(typewriterDeleteCallback, 1100);
         } else if (x > 0 && !lastWord) {
-            setTimeout(() => {
-                deleteLetter()
-                typewriter(i, x, word, txtArray, lastWord)
-            }, speed);
+            typewriterThree = setTimeout(typewriterDeleteCallback, speed);
         }
 
     }
 
-    setTimeout(() => {
-        typewriter(a, b, txt[0], arrOne);
-    }, 1000);
-    setTimeout(() => {
-        typewriter(c, d, txt[1], arrTwo);
-    }, 6500);
-    setTimeout(() => {
-        typewriter(e, f, txt[2], arrThree);
-    }, 12350);
-    setTimeout(() => {
-        typewriter(g, h, txt[3], arrFour);
-    }, 18000);
-    setTimeout(() => {
-        typewriter(i, j, txt[4], arrFive);
-    }, 23500);
-    setTimeout(() => {
-        typewriter(k, l, txt[5], arrSix);
-    }, 28700);
-    setTimeout(() => {
-        typewriter(m, n, txt[6], arrSeven, true);
-    }, 33100);
-}
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            if (cursor) {
+                document.getElementById('cursor').style.opacity = 0;
+                cursor = false;
+            } else {
+                document.getElementById('cursor').style.opacity = 1;
+                cursor = true;
+            }
+        }, cursorSpeed);
+
+        return () => {
+            clearInterval(intervalId)
+        }
+    })
+
+    useEffect(() => {
+        const one = setTimeout(() => {
+            typewriter(a, b, txt[0], arrOne);
+        }, 1000);
+        const two = setTimeout(() => {
+            typewriter(c, d, txt[1], arrTwo);
+        }, 6500);
+        const three = setTimeout(() => {
+            typewriter(e, f, txt[2], arrThree);
+        }, 12350);
+        const four = setTimeout(() => {
+            typewriter(g, h, txt[3], arrFour);
+        }, 18000);
+        const five = setTimeout(() => {
+            typewriter(i, j, txt[4], arrFive);
+        }, 23500);
+        const six = setTimeout(() => {
+            typewriter(k, l, txt[5], arrSix);
+        }, 28700);
+        const seven = setTimeout(() => {
+            typewriter(m, n, txt[6], arrSeven, true);
+        }, 33100);
+
+        return () => {
+            clearTimeout(one);
+            clearTimeout(two);
+            clearTimeout(three);
+            clearTimeout(four);
+            clearTimeout(five);
+            clearTimeout(six);
+            clearTimeout(seven);
+            clearTimeout(typewriterOne)
+            clearTimeout(typewriterTwo)
+            clearTimeout(typewriterThree)
+
+        }
+    })
+
+    return () => {
+        
+    }
+    
+} 
+

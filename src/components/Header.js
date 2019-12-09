@@ -1,17 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Scrollchor from 'react-scrollchor';
 
 import NavBar from './NavBar';
-import { typewriterApp } from '../apps/typewriter';
+import { useTypewriterApp } from '../apps/typewriter';
 
 import down from '../images/down.png';
 
 import headerStyles from '../styles/Header.module.scss';
 
 const Header = () => {
-    useEffect(() => { 
-        typewriterApp();
+    const [ innerWidth, setInnerWidth ] = useState();
+    
+    useTypewriterApp();
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setInnerWidth(window.innerWidth)
+        })
+        return () => {
+            
+        }; 
     }, []);
 
     return (
@@ -19,8 +28,7 @@ const Header = () => {
             <div className={headerStyles.headerContainer}>
                 <NavBar />
                 <div className={headerStyles.headerContainerPitch}>
-                    <h1>Hi, my name is Ryan. <br />
-                    I am <span id="typewriter" class={headerStyles.typewriter}></span><span id="cursor">|</span></h1>
+                    <h1>Hi, my name is Ryan.{innerWidth < 685 && <br />} I am <span id="typewriter" className={headerStyles.typewriter}></span><span id="cursor">|</span></h1>
                     <h2>ReactJS | JavaScript | Redux | SCSS</h2>
                     <ul>
                         <li><Link to="/resume" target="_blank" rel="noopener noreferrer">Résumé</Link></li>                 
