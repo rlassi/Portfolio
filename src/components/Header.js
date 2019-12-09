@@ -11,8 +11,6 @@ import headerStyles from '../styles/Header.module.scss';
 
 const Header = () => {
     const [ innerWidth, setInnerWidth ] = useState();
-    
-    
 
     useTypewriterApp();
 
