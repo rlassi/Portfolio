@@ -7,7 +7,7 @@ import headerStyles from '../styles/Header.module.scss';
 const NavBar = (props) => {
     return (
         <div className={headerStyles.headerContainerNavBar}>
-            <Scrollchor to="about">About</Scrollchor>
+            <Scrollchor to="portfolio">Portfolio</Scrollchor>
             <Scrollchor to="contact">Contact</Scrollchor>
         </div>
     );  

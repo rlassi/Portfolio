@@ -19,11 +19,12 @@ const App = () => {
       <Helmet>
         <title>rkLassiter Portfolio</title>
       </Helmet>     
-        <Header />
-        <Portfolio />
-        <About />
-        <Contact />
-        <Footer />
+      <Header />
+      <About />
+      <Portfolio />
+      
+      <Contact />
+      <Footer />
       <ScrollToTop
         duration={600}
         showUnder={700}

@@ -7,11 +7,11 @@
 
 
 img {
-    filter: brightness(1) invert(0);
+    filter: brightness(0) invert(.3);
 }
 
 img:hover {
-    filter: brightness(1) invert(.4);
+    filter: brightness(0) invert(1);
     transition: filter .25s ease-in-out;
 }
     

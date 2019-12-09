@@ -10,7 +10,7 @@ const About = () => {
             <div className={aboutStyles.container}>
                 <h1>About Me</h1>
                 <div className={aboutStyles.contentCard}>
-                    <img alt="Profile Picture" src={me} id={aboutStyles.me} />
+                    <img alt="Profile" src={me} id={aboutStyles.me} />
                     With a background in music and a degree in recording engineering, 
                     classical training in percussion, and a lifelong passion for coding and 
                     all things computers, I’ve accumulated a wealth of broadly transferable 

@@ -15,7 +15,7 @@ const Portfolio = () => {
             <h1>Portfolio</h1>
             <div className={portfolioStyles.container}>
                 <div className={portfolioStyles.card}>
-                    <a href="https://ryans-expensify-app.herokuapp.com/" target="_blank">
+                    <a href="https://ryans-expensify-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <img alt="Expensify App" src={expensifyThumbnail} />
                         <br />
                         Expensify *ReactJS, Firebase*

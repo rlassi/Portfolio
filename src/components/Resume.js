@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Document, Page } from 'react-pdf';
 
 import resumeStyles from '../styles/Resume.module.scss';
