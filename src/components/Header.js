@@ -12,15 +12,12 @@ import headerStyles from '../styles/Header.module.scss';
 const Header = () => {
     const [ innerWidth, setInnerWidth ] = useState();
     
+    
+
     useTypewriterApp();
 
     useEffect(() => {
-        window.addEventListener('resize', () => {
-            setInnerWidth(window.innerWidth)
-        })
-        return () => {
-            
-        }; 
+            setInnerWidth(window.innerWidth)    
     }, []);
 
     return (
