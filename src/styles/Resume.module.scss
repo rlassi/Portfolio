@@ -1,9 +1,17 @@
 .resume {
     background: #313131;
-    margin: 0;
+    margin: auto;
+    display: grid;
 }
 .contentContainer {
+    margin-top: 3rem;
     padding: 0;
-    
+    justify-self: center;
+}
+
+@media screen and (max-width: 599px) {
+    .contentContainer {
+        margin: .5rem;
+    }
 }
 
