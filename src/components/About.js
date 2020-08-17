@@ -1,6 +1,6 @@
 import React from 'react';
 
-import me from '../images/me.jpg';
+import me from '../images/IMG_3796.jpeg';
 
 import aboutStyles from '../styles/About.module.scss';
 
