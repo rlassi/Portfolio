@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import peoplesThumbnail from '../images/peoples.png';
+import peoples2Thumbnail from '../images/peoples2.png';
+import darwinDomesThumbnail from '../images/darwindomes.png';
 import todoThumbnail from '../images/TodoApp.png';
 import hangmangThumbnail from '../images/HangmanApp.png';
 import notesThumbnail from '../images/NotesApp.png';
@@ -14,6 +17,27 @@ const Portfolio = () => {
         <div className={portfolioStyles.portfolio} id="portfolio">
             <h1>Portfolio</h1>
             <div className={portfolioStyles.container}>
+                <div className={portfolioStyles.cardLarge}>
+                    <a href="https://darwindomes.com/" target="_blank" rel="noopener noreferrer">
+                        <img alt="Darwin Domes" src={darwinDomesThumbnail} />
+                        <br />
+                        Darwin Domes *GatsbyJS, Netlify*
+                    </a>
+                </div> 
+                <div className={portfolioStyles.card}>
+                    <a href="https://rkl-peoplesmarket.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <img alt="People's Market" src={peoplesThumbnail} />
+                        <br />
+                        People's Market *ReactJS, MongoDB(Atlas), Node, Express, Heroku*
+                    </a>
+                </div>
+                <div className={portfolioStyles.card}>
+                    <a href="https://rkl-peoplesmarket.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <img alt="People's Market" src={peoples2Thumbnail} />
+                        <br />
+                        People's Market *ReactJS, MongoDB(Atlas), Node, Express, Heroku*
+                    </a>
+                </div>
                 <div className={portfolioStyles.card}>
                     <a href="https://ryans-expensify-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                         <img alt="Expensify App" src={expensifyThumbnail} />
