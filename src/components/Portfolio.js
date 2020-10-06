@@ -24,19 +24,14 @@ const Portfolio = () => {
                         Darwin Domes *GatsbyJS, Netlify*
                     </a>
                 </div> 
-                <div className={portfolioStyles.card}>
-                    <a href="https://rkl-peoplesmarket.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="People's Market" src={peoplesThumbnail} />
-                        <br />
-                        People's Market *ReactJS, MongoDB(Atlas), Node, Express, Heroku*
-                    </a>
-                </div>
-                <div className={portfolioStyles.card}>
-                    <a href="https://rkl-peoplesmarket.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="People's Market" src={peoples2Thumbnail} />
-                        <br />
-                        People's Market *ReactJS, MongoDB(Atlas), Node, Express, Heroku*
-                    </a>
+                <div className={portfolioStyles.cardLarge}>
+                    <div className={portfolioStyles.peoples}>
+                        <a href="https://rkl-peoplesmarket.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="People's Market" src={peoplesThumbnail} />
+                            <br />
+                            People's Market *ReactJS, MongoDB(Atlas), Node, Express, Heroku*
+                        </a>
+                    </div>
                 </div>
                 <div className={portfolioStyles.card}>
                     <a href="https://ryans-expensify-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
